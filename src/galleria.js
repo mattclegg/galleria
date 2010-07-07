@@ -1094,7 +1094,7 @@ var G = window.Galleria = Base.extend({
     jQuery : function( str ) {
         var ret = [];
         this.loop(str.split(','), this.proxy(function(elem) {
-            elem = elem.replace(/^\s\s*/, "").replace(/\s\s*$/, "");
+            elem = elem.replace(/^\s+/, "").replace(/\s+$/, "");
             if (this.get(elem)) {
                 ret.push(this.get(elem));
             }
