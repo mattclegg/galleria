@@ -1228,6 +1228,9 @@ G.themes.create = G.addTheme = function(obj) {
                 G.raise('No theme CSS loaded');
             }
         });  
+    } else {
+      G.theme = theme;
+      jQuery(document).trigger( G.THEMELOAD );
     }
     return theme;
 };
