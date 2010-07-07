@@ -1096,14 +1096,10 @@ var G = window.Galleria = Base.extend({
         this.loop(str.split(','), this.proxy(function(elem) {
             elem = elem.replace(/^\s\s*/, "").replace(/\s\s*$/, "");
             if (this.get(elem)) {
-                ret.push(elem);
+                ret.push(this.get(elem));
             }
         }));
-        var jQ = jQuery(this.get(ret.shift()));
-        this.loop(ret, this.proxy(function(elem) {
-            jQ = jQ.add(this.get(elem));
-        }));
-        return jQ;
+        return jQuery(ret);
     },
     
     $ : function( str ) {
