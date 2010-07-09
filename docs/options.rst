@@ -36,6 +36,7 @@ Table of contents (in alphabetical order)
 - on_image
 - popup_links
 - preload
+- show_info
 - queue
 - thumb_crop
 - thumb_margin
@@ -345,6 +346,16 @@ Defines how many images Galleria should preload in advance. Please note that thi
 - **2** preloads the next 2 images in line
 - **'all'** forces Galleria to start preloading all images. This may slow down client.
 - **0** will not preload any images
+
+*****
+
+show_info
+--------
+
+    | type: **Boolean**
+    | default: **true**
+
+If ``true``, this will activate the info box when needed. ``false`` will force it to not appear at all.
 
 *****
 

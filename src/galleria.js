@@ -508,6 +508,7 @@ var G = window.Galleria = Base.extend({
             on_image: function(img,thumb) {},
             popup_links: false,
             preload: 2,
+            show_info: true,
             queue: true,
             show: 0,
             thumb_crop: true,
@@ -1069,6 +1070,9 @@ var G = window.Galleria = Base.extend({
     },
     
     hasInfo : function(index) {
+        if (this.options.show_info === false) {
+          return false;
+        }
         var d = this.getData(index);
         var check = 'title description author'.split(' ');
         for ( var i=0; check[i]; i++ ) {
