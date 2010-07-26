@@ -1348,6 +1348,9 @@ G.themes.create = G.addTheme = function(obj) {
         if (!css) {
             G.raise('No theme CSS loaded');
         }
+    } else {
+      G.theme = theme;
+      jQuery(document).trigger( G.THEMELOAD );
     }
     return theme;
 };
