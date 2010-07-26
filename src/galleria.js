@@ -783,7 +783,7 @@ var G = window.Galleria = Base.extend({
             if (thumb.ready) {
                 w += thumb.outerWidth || this.width(thumb.elem, true);
                 hooks[i+1] = w;
-                h = Math.max(h, thumb.image.height)
+                h = Math.max(h, thumb.outerHeight || this.height(thumb.elem, true))
             }
         });
         this.toggleClass(this.get('thumbnails-container'), 'galleria-carousel', w > this.stageWidth);
