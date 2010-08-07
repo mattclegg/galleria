@@ -446,16 +446,6 @@ Defines how many images Galleria should preload in advance. Please note that thi
 
 *****
 
-show_info
---------
-
-    | type: **Boolean**
-    | default: **true**
-
-If ``true``, this will activate the info box when needed. ``false`` will force it to not appear at all.
-
-*****
-
 queue
 -----
 
