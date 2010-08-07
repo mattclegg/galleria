@@ -1,5 +1,3 @@
-.. _slideshowpro:
-
 ======
 SlideShowPro Plugin
 ======

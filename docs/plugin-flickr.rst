@@ -1,5 +1,3 @@
-.. _flickr:
-
 ======
 Flickr Plugin
 ======
@@ -128,3 +126,11 @@ sort
     | default: **'interestingness-desc'**
 
 How to sort the images. Available options are: date-posted-asc, date-posted-desc, date-taken-asc, date-taken-desc, interestingness-desc, interestingness-asc, and relevance.
+
+description
+------------
+
+    | type: **Boolean**
+    | default: **false**
+
+Set this to true if you would like the plugin to fetch descriptions for each image and add it to the gallery.
