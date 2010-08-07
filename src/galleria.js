@@ -957,7 +957,6 @@ var G = window.Galleria = Base.extend({
             overlay_background: '#0b0b0b',
             popup_links: false,
             preload: 2,
-            show_info: true,
             queue: true,
             show: 0,
             show_info: true,
