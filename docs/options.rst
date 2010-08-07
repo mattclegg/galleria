@@ -45,7 +45,6 @@ Table of contents (in alphabetical order)
 - overlay_background
 - popup_links
 - preload
-- show_info
 - queue
 - show
 - show_info
